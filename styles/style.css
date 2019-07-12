@@ -1,0 +1,29 @@
+.body {
+  padding: 0;
+  margin: 0;
+	border: 0;
+	font-size: 100%;
+  font: inherit;
+  color: #494949;
+  vertical-align: baseline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timer {
+  display: flex;
+}
+
+.timeCondainer {
+  display: flex;
+  margin: 0 1em;
+}
+
+.time-value {
+  margin-right: .3em;
+}
