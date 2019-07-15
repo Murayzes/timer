@@ -6,28 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Timer</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="./node_modules/air-datepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
 </head>
 <body class="body">
     <h1 class="title">Time remaining until New Year!!!</h1>
     <div class="timer">
-        <div class="timeCondainer">
+        <div class="timeContainer">
+            <p class="time-value" id="weeks"></p>
+            <p class="time-name">weeks</p>
+        </div>
+        <div id="daysContainer" class="timeContainer">
             <p class="time-value" id="days"></p> 
             <p class="time-name">days</p>
         </div>
-        <div class="timeCondainer">
+        <div class="timeContainer">
                 <p class="time-value" id="hours"></p> 
                 <p class="time-name">hours</p>
         </div>
-        <div class="timeCondainer">
+        <div class="timeContainer">
                 <p class="time-value" id="minutes"></p> 
                 <p class="time-name">minutes</p>
         </div>
-        <div class="timeCondainer">
+        <div class="timeContainer">
                 <p class="time-value" id="seconds"></p> 
                 <p class="time-name">seconds</p>
         </div>
     </div>
+    <input type='text' class='datepicker-here'/>
 
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/air-datepicker/dist/js/datepicker.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
+ 
