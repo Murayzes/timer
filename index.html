@@ -6,36 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Timer</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="./node_modules/air-datepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
 </head>
 <body class="body">
-    <h1 class="title">Time remaining until New Year!!!</h1>
-    <div class="timer">
-        <div class="timeContainer">
-            <p class="time-value" id="weeks"></p>
-            <p class="time-name">weeks</p>
-        </div>
-        <div id="daysContainer" class="timeContainer">
-            <p class="time-value" id="days"></p> 
-            <p class="time-name">days</p>
-        </div>
-        <div class="timeContainer">
-                <p class="time-value" id="hours"></p> 
-                <p class="time-name">hours</p>
-        </div>
-        <div class="timeContainer">
-                <p class="time-value" id="minutes"></p> 
-                <p class="time-name">minutes</p>
-        </div>
-        <div class="timeContainer">
-                <p class="time-value" id="seconds"></p> 
-                <p class="time-name">seconds</p>
-        </div>
-    </div>
-    <input type='text' class='datepicker-here'/>
+    <h1 data-title-toggle class="body__title-toggle">Time remaining until New Year!!!</h1>
+    <div class="data">
 
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/air-datepicker/dist/js/datepicker.min.js"></script>
+        <div class="data__timer">
+            <p data-pragraph-value class="counter data__pragraph-value"></p>
+        </div>
+        <!-- <div class="data__timer">
+            <p class="data__pragraph-title>Years:</p>
+            <p class="years data__pragraph-value"></p>
+        </div>
+        <div class="data__timer">
+            <p class="data__pragraph-title">Months:</p>
+            <p class="months data__pragraph-value"></p>
+        </div>
+        <div class="data__timer">
+            <p class="data__pragraph-title">Weeks:</p>
+            <p class="weeks data__pragraph-value"></p>
+        </div>
+        <div class="data__timer">
+            <p class="data__pragraph-title">Days:</p>
+            <p class="days data__pragraph-value"></p> 
+        </div>
+        <div class="data__timer">
+                <p class="data__pragraph-title">Hours:</p>
+                <p class="hours data__pragraph-value"></p> 
+        </div>
+        <div class="data__timer">
+                <p class="data__pragraph-title">Minutes:</p>
+                <p class="minutes data__pragraph-value"></p>
+        </div>
+        <div class="data__timer">
+                <p class="data__pragraph-title">Seconds:</p>
+                <p class="seconds "></p> 
+        </div> -->
+
+    </div>
+
+    <input data-date-picker type="date" class="date-picker">
+
+    <script src="./node_modules/moment/min/moment.min.js"></script>
+    <script src="./node_modules/countdown/countdown.js"></script>
+    <script src="./node_modules/moment-countdown/dist/moment-countdown.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
